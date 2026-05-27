@@ -10,10 +10,11 @@ import work.own.diarilala.service.MultiplicationService;
 @AllArgsConstructor
 public class MultiplicationController {
 
-    private final MultiplicationService multiplicationService;
+  private final MultiplicationService multiplicationService;
 
-    @GetMapping("/multiply")
-    public int multiply(@RequestParam int a, @RequestParam int b) {
-        return multiplicationService.multiply(a, b);
-    };
+  @GetMapping("/multiply")
+  public int multiply(@RequestParam int a, @RequestParam int b) {
+    return multiplicationService.multiply(a, b);
+  }
+  ;
 }

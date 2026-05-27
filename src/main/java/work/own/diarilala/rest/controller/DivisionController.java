@@ -8,13 +8,13 @@ import work.own.diarilala.service.DivisionService;
 
 @RestController
 @AllArgsConstructor
-
 public class DivisionController {
 
-    private final DivisionService divisionService;
+  private final DivisionService divisionService;
 
-    @GetMapping("/divide")
-    public int divide(@RequestParam int a, @RequestParam int b) {
-        return divisionService.divide(a, b);
-    };
+  @GetMapping("/divide")
+  public int divide(@RequestParam int a, @RequestParam int b) {
+    return divisionService.divide(a, b);
+  }
+  ;
 }

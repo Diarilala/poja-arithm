@@ -8,13 +8,12 @@ import work.own.diarilala.service.SubstractionService;
 
 @RestController
 @AllArgsConstructor
-
 public class SubstractionController {
 
-    private final SubstractionService substractionService;
+  private final SubstractionService substractionService;
 
-    @GetMapping("/substract")
-    public int substract(@RequestParam int a, @RequestParam int b) {
-        return substractionService.substract(a, b);
-    }
+  @GetMapping("/substract")
+  public int substract(@RequestParam int a, @RequestParam int b) {
+    return substractionService.substract(a, b);
+  }
 }
