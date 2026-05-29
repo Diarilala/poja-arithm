@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class MultiplicationService {
-  public int multiply(int a, int b) {
+  public float multiply(float a, float b) {
     return a * b;
   }
 }

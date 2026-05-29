@@ -13,7 +13,7 @@ public class MultiplicationController {
   private final MultiplicationService multiplicationService;
 
   @GetMapping("/multiply")
-  public int multiply(@RequestParam int a, @RequestParam int b) {
+  public float multiply(@RequestParam float a, @RequestParam float b) {
     return multiplicationService.multiply(a, b);
   }
   ;
