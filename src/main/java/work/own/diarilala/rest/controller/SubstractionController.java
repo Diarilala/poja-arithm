@@ -13,7 +13,7 @@ public class SubstractionController {
   private final SubstractionService substractionService;
 
   @GetMapping("/substract")
-  public int substract(@RequestParam int a, @RequestParam int b) {
-    return substractionService.substract(a, b);
+  public float subtract(@RequestParam float a, @RequestParam float b) {
+    return substractionService.subtract(a, b);
   }
 }

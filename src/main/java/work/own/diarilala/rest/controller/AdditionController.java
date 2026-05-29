@@ -1,6 +1,5 @@
 package work.own.diarilala.rest.controller;
 
-import java.math.BigDecimal;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -14,7 +13,7 @@ public class AdditionController {
   private final AdditionService additionService;
 
   @GetMapping("/add")
-  public BigDecimal addition(@RequestParam BigDecimal a, @RequestParam BigDecimal b) {
+  public float addition(@RequestParam float a, @RequestParam float b) {
     return additionService.add(a, b);
   }
   ;

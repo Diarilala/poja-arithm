@@ -13,7 +13,7 @@ public class DivisionController {
   private final DivisionService divisionService;
 
   @GetMapping("/divide")
-  public int divide(@RequestParam int a, @RequestParam int b) {
+  public float divide(@RequestParam float a, @RequestParam float b) {
     return divisionService.divide(a, b);
   }
   ;
